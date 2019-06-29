@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Advantage</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+        <!--Google charts sample-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="../js/test.js"></script>
+        </script>
+    </head>
+    <body>		
+
+		<header>
+			<div class="innertube">
+				<h1>Advantage</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+                        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+					</div>
+				</div>
+			</main>
+			
+			<nav>
+				<div class="innertube">
+                    <div id="orders_div">
+                        <h1>Configure Symbol:</h1>
+                        Symbol:<input id="sim_symbol" type="text" name="symbol" value="MSFT"><br>
+                        Date:<input id="sim_date" type="text" name="date" value="20190304"><br>
+                        Update Period:<input id="sim_period" type="text" name="date" value="1000"><br>
+                        Account Value in USD:<input id="sim_account_val" type="text" name="date" value="6000"><br>
+                        <button id="start_button" class="order_button" type="button" onclick="startSimulation()">START</button>
+                        <button id="stop_button" class="order_button" type="button" onclick="stopSimulation()">STOP</button><br>
+
+                        <h1>Order Execution:</h1>
+                        <ul>
+                            <li id="account_value"></li>
+                            <li id="num_shares"></li>
+                            <li id="current_price"></li>
+                        </ul>
+                        Shares To Trade:
+                        <input id="shares_to_trade" type="text" value=0></input>
+                        <button id="buy_button" class="order_button" type="button" onclick="buy()">BUY</button>
+                        <button id="sell_button" class="order_button" type="button" onclick="sell()">SELL</button>
+                        
+                        <div id="chart_info_div">
+                        </div>
+                    </div>
+				</div>
+			</nav>
+		
+		</div>
+		
+		<footer>
+			<div class="innertube">
+				<p>Written by ADragon - 2019</p>
+			</div>
+		</footer>
+	
+	</body>
+
+</html>
