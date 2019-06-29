@@ -1,0 +1,5 @@
+{
+    "providers": ["http://finviz.com"],
+    "possibleRSIOversoldValues": [10, 20, 30, 40],
+    "possibleRSIOverboughtValues": [60, 70, 80, 90]
+}
